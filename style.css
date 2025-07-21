@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vrdznagir';
+    src: url(./fonts/Vrdznagir.otf);
+}
+
+@font-face {
+    font-family: 'ArianAMU';
+    src: url(./fonts/arnamu.ttf);
+}
+
+body {
+    min-height: 100vh;
+    background: url('./images/background.svg');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.container .left_block {
+    position: relative;
+    width: 70%;
+}
+
+.container .pesa, .container .hars {
+    z-index: 1;
+    top: 20px;
+    position: absolute;
+}
+
+.container .pesa {
+    z-index: 2;
+    left: 5%;
+}
+
+.container .pesu_qaylel {
+    top: 20px;
+    position: absolute;
+    animation: pesu_qaylel 2.5s both;
+}
+
+.container .hars {
+    top: 40px;
+    right: 5%;
+}
+
+.container .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 164px;
+    background-color: #ffffff;
+}
+
+.container .pak_srtik {
+    position: absolute;
+    right: -70px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 163px;
+    border-radius: 50%;
+    background-image: url(./images/sirt.svg);
+    background-position: center;
+}
+
+.container .names p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #7782A4;
+}
+
+.container .to_right_flower {
+    margin-right: 100px;
+}
+
+.container .top_block {
+    height: 200px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px 8px 9px #B0B2B9;
+}
+
+.container .bottom_block {
+    height: 200px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px -3px 9px #B0B2B9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.container .right_block {
+    margin-left: -41%;
+    background: #fff;
+    height: 540px;
+    padding: 25px 20px;
+}
+
+.container .heading {
+
+    text-align: center;
+}
+
+.container .heading h3 {
+    margin-bottom: 10px;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.container .heading span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 117.47%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #2C4896;
+}
+
+.container .heading p {
+    margin-top: 12px;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.container .psakadrutyan_araroxutyun {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .psakadrutyan_araroxutyun h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.container .psakadrutyan_araroxutyun p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+
+.container .wedding_hall {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .wedding_hall h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.container .wedding_hall span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+
+.container .wedding_hall p {
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+.container .thanks_block {
+    margin-top: 42px;
+    width: 100%;
+    text-align: center;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.container .hide_names_half {
+    animation: names_hide 2s both;
+}
+
+.container.to_right_flower, .container.to_left_flower, .container.pak_srtik, .container.names p {
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.container .show_right_half {
+    animation: show_right_block 2s both;
+}
+
+@keyframes show_right_block {
+    from {
+        margin-left: -40%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes names_hide {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 40%;
+    }
+}
+
+@keyframes pesu_qaylel {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 45%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    @keyframes pesu_qaylel {
+        from {
+            left: 5%;
+        }
+        to {
+            left: 36%;
+        }
+    }
+    .container .right_block {
+        margin-left: -46%;
+    }
+
+    .container .thanks_block {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    @keyframes pesu_qaylel {
+        from {
+            left: 5%;
+        }
+        to {
+            left: 31%;
+        }
+    }
+    .container .right_block {
+        margin-left: -47%;
+    }
+}
+
+.small_container {
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+.small_container .left_block {
+    position: relative;
+    width: 100%;
+}
+
+.small_container .pesa, .small_container .hars {
+    height: 140px;
+    z-index: 1;
+    top: 20px;
+    position: absolute;
+}
+
+.small_container .pesa {
+    z-index: 2;
+    left: 5%;
+}
+
+.small_container .pesu_qaylel {
+    top: 20px;
+    position: absolute;
+    animation: pesu_qaylel_small 2.5s both;
+}
+
+.small_container .hars {
+    top: 25px;
+    right: 5%;
+}
+
+.small_container .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.small_container .pak_srtik {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(./images/sirt.svg);
+    background-size: 35px;
+    margin: 0 auto;
+    margin-top: -10px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+    background-position: center;
+}
+
+.small_container .names p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7782A4;
+}
+
+.small_container .to_right_flower, .small_container .to_left_flower {
+    width: 34px;
+}
+
+.small_container .to_right_flower {
+    margin-right: 50px;
+}
+
+.small_container .top_block {
+    height: 70px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px 8px 9px #B0B2B9;
+}
+
+.small_container .bottom_block {
+    height: 70px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px -3px 9px #B0B2B9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.small_container .right_block {
+    margin-top: -41%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.small_container .right_input_block {
+    background: #fff;
+    padding: 25px 20px;
+}
+
+.small_container .heading {
+    text-align: center;
+}
+
+.small_container .heading h3 {
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118.9%;
+    text-align: center;
+}
+
+.small_container .heading span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 117.47%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #2C4896;
+
+}
+
+.small_container .heading p {
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 118.9%;
+    text-align: center;
+    color: #000000;
+}
+
+.small_container .psakadrutyan_araroxutyun {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small_container .psakadrutyan_araroxutyun h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.small_container .psakadrutyan_araroxutyun p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+
+.small_container .wedding_hall {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.small_container .wedding_hall h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.small_container .wedding_hall span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+
+.small_container .wedding_hall p {
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.small_container .thanks_block {
+    margin-top: 20px;
+    font-family: 'Arian AMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144.9%;
+    text-align: center;
+    color: #000000;
+}
+
+.small_container .pak_srtik_img {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(./images/sirt.svg);
+    background-size: 35px;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-position: center;
+}
+
+
+.small_container .to_right_flower, small_container .to_left_flower, small_container .pak_srtik, small_container .names p {
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.small_container .show_right_half {
+    animation: show_bottom_block 2s both;
+}
+
+@keyframes show_bottom_block {
+    from {
+        margin-top: -40%;
+        height: 40px;
+    }
+    to {
+        margin-top: 0;
+        height: 510px;
+    }
+}
+
+@keyframes pesu_qaylel_small {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 62%;
+    }
+}
+
+
