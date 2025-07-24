@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hovo and Hermine</title>
+    <title>HovHannes and Hermine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+<audio id="audio" controls>
+    <!--  <source src="https://dl01.dtmp3.pw/mp3/32833.mp3" type="audio/mpeg">-->
+      <source src="https://dl.mexedi.am/mp3/Hayko_-_Sirum_Em_(www.mexedi.am).mp3" type="audio/mpeg">
+    <!--    <source src="https://dl2.mp3party.net/online/10151565.mp3" type="audio/mpeg">-->
+    Your browser does not support the audio element.
+</audio>
+
+<div id="paper1" class="paper-item paper heart" style="display: none;">
+    <button class="heart"></button>
+</div>
+
 <div class="container">
     <div class="left_block">
         <div class="top_block"></div>
@@ -89,5 +101,23 @@
 
 
 <script src="script.js"></script>
+<!-- <script src="./heartScript.js"></script> -->
+<script>
+    // Function to check if the user is on a mobile device
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Load appropriate script based on device
+    if (isMobileDevice()) {
+        const mobileScript = document.createElement('script');
+        mobileScript.src = "./mobile.js";
+        document.head.appendChild(mobileScript);
+    } else {
+        const webScript = document.createElement('script');
+        webScript.src = "./web.js";
+        document.head.appendChild(webScript);
+    }
+</script>
 </body>
 </html>
